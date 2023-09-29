@@ -15,7 +15,7 @@ def run_gui_app():
     root = tk.Tk()
     root.title("Remove Duplicates")
 
-    input_label = tk.Label(root, text="Enter a list of numbers (comma-separated):")
+    input_label = tk.Label(root, text="Enter a list of numbers (space-separated):")
     input_entry = tk.Entry(root)
     remove_button = tk.Button(root, text="Remove Duplicates", command=remove_duplicates_callback)
     result_label = tk.Label(root, text="Result:")
