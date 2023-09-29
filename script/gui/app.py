@@ -1,12 +1,18 @@
 import tkinter as tk
 import pyperclip
-from utils.duplicate_remover import remove_duplicates
+from utils.helpers import(
+    remove_duplicates,
+    is_valid_input
+) 
 
 def run_gui_app():
     def remove_duplicates_callback():
         input_text = input_entry.get()
-        result = remove_duplicates(input_text)
-        result_text.set("[" + ", ".join(map(str, result)) + "]") 
+        if is_valid_input(input_text):
+            result = remove_duplicates(input_text)
+            result_text.set("[" + ", ".join(map(str, result)) + "]")
+        else:
+            result_text.set("Invalid input: Please enter digits and spaces only")
 
     def copy_to_clipboard():
         result_to_copy = result_text.get()
