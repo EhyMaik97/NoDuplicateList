@@ -8,8 +8,8 @@ def remove_duplicates(input_text):
     return result_list
 
 def test_valid_input():
-    input_text = "123, 456, 789"
-    assert not is_valid_input(input_text)
+    input_text = "123 456 789 1 23 45 76"
+    assert is_valid_input(input_text)
 
 def test_invalid_input():
     input_text = "123, ABC, 789"
