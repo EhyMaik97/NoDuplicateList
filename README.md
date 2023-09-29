@@ -1,6 +1,7 @@
 # NoDuplicateList
 Small script that helps me with a task at work.
 It takes as input a list of numbers (separated by space) and returns a list without duplicates, separated by commas and this sequence is enclosed between two square brackets
+
 P.S. I don't care sorting the list 
 
 # Exemple
